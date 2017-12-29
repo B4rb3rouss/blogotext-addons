@@ -1,0 +1,28 @@
+#!/bin/sh
+# create zip of every directory
+# and generate a file addons_list.txt : 
+#   plugin1 version url.zip
+#   plugin2 version url.zip
+#
+
+# requires 7z (p7zip)
+
+# FIXME
+REPO='http://blogotext.org/addons-repo/'
+
+# cleanup
+rm *.zip
+if [ -e addons_list.txt ]; then
+	rm addons_list.txt
+fi
+
+for i in ../*/; do
+	VERSION=$(grep -Eo "'version.*,$" $i/* | cut -d"'" -f4)
+	if [ -n "$VERSION" ]; then
+		BN=$(basename $i)
+		echo $BN $VERSION ${REPO}${BN}.zip >> addons_list.txt
+		7z a -mx=9 ${BN}.zip $i
+	fi
+done
+
+exit 0

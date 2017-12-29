@@ -1,0 +1,10 @@
+calendar 1.0.0 http://blogotext.org/addons-repo/calendar.zip
+highlight 1.0.0 http://blogotext.org/addons-repo/highlight.zip
+hscroll 1.1.0 http://blogotext.org/addons-repo/hscroll.zip
+latex 1.0.0 http://blogotext.org/addons-repo/latex.zip
+lazyload 1.0.2 http://blogotext.org/addons-repo/lazyload.zip
+readmore 1.0.0 http://blogotext.org/addons-repo/readmore.zip
+relatedposts 1.0.0 http://blogotext.org/addons-repo/relatedposts.zip
+showrss 1.1.0 http://blogotext.org/addons-repo/showrss.zip
+smileys 1.0.0 http://blogotext.org/addons-repo/smileys.zip
+use_firefox 1.0.0 http://blogotext.org/addons-repo/use_firefox.zip
